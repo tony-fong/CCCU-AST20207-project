@@ -11,7 +11,7 @@ $password = $_POST["password"];
 $result = mysqli_query($con,"SELECT * FROM user Where username = '$login' and password = '$password'");
 $row = mysqli_fetch_row($result);
 
-//$data = ['login' => $row[0] ,'password'=>$row[1] ];
+
 // Mysql_num_row is counting table row
 $count=mysqli_num_rows($result);
 
