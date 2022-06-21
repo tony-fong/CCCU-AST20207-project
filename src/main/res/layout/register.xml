@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+
+    tools:context=".register">
+
+    <TextView
+
+        android:id="@+id/textviuew"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="150dp"
+
+        android:text="註冊"
+
+        android:textSize="20sp"
+
+        />
+
+    <TextView
+
+        android:id="@+id/textview3"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/textviuew"
+
+        android:layout_marginTop="23dp"
+
+        android:text="用戶ID:\t\t\t"
+
+        />
+
+    <EditText
+
+        android:id="@+id/username"
+
+        android:layout_width="320dp"
+
+        android:layout_height="wrap_content"
+
+        android:layout_alignBaseline="@+id/textview3"
+
+        android:layout_alignParentEnd="true"
+
+        android:layout_alignParentRight="true"
+
+        android:layout_marginStart="7dp"
+
+        android:layout_marginLeft="-1dp"
+
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
+        android:layout_toEndOf="@+id/textView2"
+        android:layout_toRightOf="@+id/textview3" />
+
+    <TextView
+
+        android:id="@+id/textview4"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/textview3"
+
+        android:layout_marginTop="32dp"
+
+        android:text=" 密碼:\t\t\t\t" />
+
+    <EditText
+
+        android:id="@+id/Password"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="100dp"
+
+        android:layout_alignParentRight="true"
+
+        android:layout_toRightOf="@+id/textview4"
+
+        android:layout_marginRight="30dp"
+
+        android:layout_alignBaseline="@+id/textview4"
+
+        />
+
+    <TextView
+
+        android:id="@+id/textview5"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/textview4"
+
+        android:layout_marginTop="27dp"
+
+        android:text="重新輸入:" />
+
+    <EditText
+
+        android:id="@+id/repassword"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="150dp"
+
+        android:layout_alignParentRight="true"
+
+        android:layout_toRightOf="@+id/textview5"
+
+        android:layout_marginRight="30dp"
+
+        android:layout_alignBaseline="@+id/textview5"
+
+        />
+
+    <TextView
+
+        android:id="@+id/textview6"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/textview5"
+
+        android:layout_marginTop="20dp"
+
+        android:text="年龄:\t\t\t\t" />
+
+    <EditText
+
+        android:id="@+id/age"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:layout_alignBaseline="@+id/textview6"
+
+        android:layout_alignParentRight="true"
+
+        android:layout_marginTop="250dp"
+
+        android:layout_marginRight="30dp"
+
+        android:layout_toRightOf="@+id/textview6"
+
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="49dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview6"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="26dp"
+        android:text="email" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="318dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/age"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/textView2"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="299dp"
+        android:text="register" />
+
+    <Button
+        android:id="@+id/backLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="303dp"
+        android:layout_toEndOf="@+id/register"
+        android:text="Back" />
+
+</RelativeLayout>
