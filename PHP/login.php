@@ -8,8 +8,6 @@ if (!$con)
 mysqli_select_db($con,"ast20207");
 $login = $_POST["login"];
 $password = $_POST["password"];
-//$login = "admin";
-//$password = "admin";
 $result = mysqli_query($con,"SELECT * FROM user Where username = '$login' and password = '$password'");
 $row = mysqli_fetch_row($result);
 
